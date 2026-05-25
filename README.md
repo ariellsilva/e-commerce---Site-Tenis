@@ -1,4 +1,4 @@
-# 👟 Tatoo Store
+# 👟 E-commerce Tênis
 
 Projeto front-end inspirado em grandes e-commerces como Nike e Adidas, desenvolvido com HTML, CSS e JavaScript.
 
