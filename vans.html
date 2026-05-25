@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+     <link rel="stylesheet" href="tenis.css">
+    <title>Vans</title>
+</head>
+<body>
+    
+     <nav id="filtros-tenis">
+        <a href="nike.html">Nike</a>
+        <a href="puma.html">Puma</a>
+        <a href="adidas.html">Adidas</a>
+        <a href="index.html">Menu</a>
+    </nav>
+
+    <aside id="campo-itens">
+        <div class="pesquisa">
+            <label for=""><span class="material-symbols-outlined">search</span></label>
+            <input type="text" id="SearchPesquisa" placeholder="Pesquisa">
+        </div>
+
+        <div id="filtros">
+            <h3>Preços</h3>
+            <button class="filter-btn" data-min="200" data-max="300">R$ 200 - R$ 300</button>
+            <button class="filter-btn" data-min="300" data-max="400">R$ 300 - R$ 400</button>
+
+            <h3>Tamanhos</h3>
+            <button class="filter-btn" data-t-min="35" data-t-max="38">35 até 38</button>
+            <button class="filter-btn" data-t-min="39" data-t-max="45">39 até 45</button>
+        </div>
+    </aside>
+    
+    <main>
+
+        <section id="tenis-section">
+        <div id="Lista-Produto">
+
+            <div class="tenis-card" data-preco="250" data-tamanho="37">
+                <div class="img-container">
+                <img src="img vans/vans 1.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 250,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal1')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal1">
+                <img src="img vans/vans 1.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 37</p>
+                <p>R$ 250,00</p>
+                <button id="fechar" onclick="fechar('modal1')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="350" data-tamanho="42">
+                <div class="img-container">
+                <img src="img vans/vans 2.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 350,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal2')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal2">
+                <img src="img vans/vans 2.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 42</p>
+                <p>R$ 350,00</p>
+                <button id="fechar" onclick="fechar('modal2')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="400" data-tamanho="38">
+                <div class="img-container">
+                 <img src="img vans/vans 3.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 400,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal3')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal3">
+                <img src="img vans/vans 3.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 38</p>
+                <p>R$ 400,00</p>
+                <button id="fechar" onclick="fechar('modal3')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="200" data-tamanho="40">
+                <div class="img-container">
+                 <img src="img vans/vans 4.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 200,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal4')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal4">
+                <img src="img vans/vans 4.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 40</p>
+                <p>R$ 200,00</p>
+                <button id="fechar" onclick="fechar('modal4')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="300" data-tamanho="41">
+                <div class="img-container">
+                 <img src="img vans/vans 5.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 300,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal5')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal5">
+                <img src="img vans/vans 5.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 41</p>
+                <p>R$ 300,00</p>
+                <button id="fechar" onclick="fechar('modal5')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="250" data-tamanho="36">
+                <div class="img-container">
+                 <img src="img vans/vans 6.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 250,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal6')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal6">
+                <img src="img vans/vans 6.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 36</p>
+                <p>R$ 250,00</p>
+                <button id="fechar" onclick="fechar('modal6')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="350" data-tamanho="40">
+                <div class="img-container">
+                 <img src="img vans/vans 7.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 350,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal7')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal7">
+                <img src="img vans/vans 7.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 40</p>
+                <p>R$ 350,00</p>
+                <button id="fechar" onclick="fechar('modal7')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="450" data-tamanho="37">
+                <div class="img-container">
+                 <img src="img vans/vans 8.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 400,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal8')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal8">
+                <img src="img vans/vans 8.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 37</p>
+                <p>R$ 400,00</p>
+                <button id="fechar" onclick="fechar('modal8')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="200" data-tamanho="45">
+                <div class="img-container">
+                 <img src="img vans/vans 9.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 200,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal9')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal9">
+                <img src="img vans/vans 9.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 45</p>
+                <p>R$ 200,00</p>
+                <button id="fechar" onclick="fechar('modal9')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="400" data-tamanho="35">
+                <div class="img-container">
+                 <img src="img vans/vans 10.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 350,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal10')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal10">
+                <img src="img vans/vans 10.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 35</p>
+                <p>R$ 350,00</p>
+                <button id="fechar" onclick="fechar('modal10')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="400" data-tamanho="42">
+                <div class="img-container">
+                 <img src="img vans/vans 11.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 400,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal11')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal11">
+                <img src="img vans/vans 11.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 42</p>
+                <p>R$ 400,00</p>
+                <button id="fechar" onclick="fechar('modal11')">X</button>
+            </dialog>
+
+            <div class="tenis-card" data-preco="400" data-tamanho="43">
+                <div class="img-container">
+                 <img src="img vans/vans 12.webp" alt="">
+                </div>
+                <h4>Tênis da Vans</h4>
+                <p>R$ 250,00</p>
+                <button class="btn-detalhes" onclick="abrir('modal12')">Ver detalhes</button>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <dialog id="modal12">
+                <img src="img vans/vans 12.webp" alt="">
+                <h4></h4>
+                <p>Tamanho 43</p>
+                <p>R$ 250,00</p>
+                <button id="fechar" onclick="fechar('modal12')">X</button>
+            </dialog>
+
+        </div>
+        </section>
+
+    </main>
+ 
+    <script src="javascript.js"></script>
+    <script type="module" src="sistema.js"></script>
+    
+</body>
+</html>
+</html>

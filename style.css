@@ -1,0 +1,507 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-destaque: #ff4757; 
+    --cor-fundo-bloco: #ffffff;
+    --cor-fundo-site: #f8f9fa;
+    --cor-texto: #111111;
+    --cor-texto-mutado: #666666;
+    --transicao: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --sombra-suave: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --sombra-hover: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+* {
+     margin: 0; padding: 0; box-sizing: border-box; 
+    }
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--cor-fundo-site);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+#img-header {
+    filter: brightness(0.6) blur(1px); 
+}
+.marca-destaque {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.btn-header-shop {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-header-shop:hover {
+     background: #fff; color: #000; 
+}
+#imagem-container-full::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, transparent 60%),
+    radial-gradient(circle, transparent 20%, rgba(0,0,0,0.4) 100%);
+    z-index: 2;
+}
+#imagem-container-full {
+    position: relative;
+    width: 100%;
+    height: 85vh; 
+    overflow: hidden;
+    background-color: #000;
+}
+.header-content {
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    color: white;
+    z-index: 5;
+}
+#sessao-tenis {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 0; 
+    padding: 0;
+}
+
+#direita, #esquerda {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 10;
+}
+#direita:hover, #esquerda:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#direita { left: 20px; }  
+#esquerda { right: 20px; }
+
+.tenis-da-nike, .tenis-da-adidas, .tenis-da-puma, .tenis-da-vans{
+display: flex;
+justify-content: center;
+gap: 30px;
+padding: 20px 20px;
+}
+.filtros-itens > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.titulo-itens{
+text-align: center;
+padding: 40px 20px 10px;
+}
+.filtros-itens a{
+    text-decoration: none;
+}
+.filtros-itens p {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+#imagem img{
+    display: block;
+    margin: 0 auto;
+}
+#titulo {
+    background-color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #1a1a1a;
+}
+#titulo h1 {
+    font-size: 28px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffffff 0%, #a1a1a1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#sessao a {
+    color: var(--cor-texto-mutado);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: var(--transicao);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.titulo-nike-principal, .titulo-adidas-principal, .titulo-puma-principal, .titulo-vans-principal{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#sessao {
+    background-color: var(--cor-fundo-bloco);
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 0;
+}
+#social{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.titulo-sapato-social{
+    text-align: center;
+}
+#contato{
+display: flex;
+gap: 10px;
+justify-content: center;
+padding: 40px 40px 30px;
+}
+#imagem-contato img{
+     width: 350px;
+}
+#animacoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+#animacoes > div:hover img {
+    transform: scale(1.05);
+}
+#animacoes img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+#historia {
+  display: flex;
+  gap: 15px;
+}
+.texto-historia h2 {
+    margin-bottom: 15px;
+}
+#contato button{
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+  text-align: center;
+  width: 100px;
+  border: none;
+}
+.texto-historia p {
+    color: var(--cor-texto-mutado);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.video-historia {
+    width: 100%;
+    max-width: 750px;
+}
+.texto-historia{
+  text-align: center;
+}
+#sessao-tenis img, #sessao-social img{
+    width: 200px;
+    height: 200px;
+}
+.filtros-itens img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicao);
+}
+.filtros-itens {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 20px 40px;
+    text-align: center;
+}
+section {
+    padding: 60px 20px; 
+    border-bottom: 1px solid #f0f0f0; 
+}
+#sessao a:hover {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+.tenis-da-nike, .tenis-da-adidas, .tenis-da-puma, .tenis-da-vans, #social{
+    gap: 25px;
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+.tenis-da-nike:hover, .tenis-da-adidas:hover, .tenis-da-puma:hover, #social:hover, .tenis-da-vans:hover { 
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.btn-comprar {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 50px;
+    padding: 60px 10%;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.contato-informacao input, .contato-informacao textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+.video-historia iframe {
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    aspect-ratio: 16 / 9; 
+}
+footer{
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+#final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.texto-final h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--cor-destaque);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+.texto-final {
+    text-align: center;
+}
+.imagens-finais img{
+    width: 35px;
+    margin: 0 10px;
+    filter: invert(1); 
+}
+.texto-final p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+#link-usuario .material-symbols-outlined{
+    font-size: 20px;
+    vertical-align: middle;
+}
+.titulo-itens h2, 
+.titulo-nike-principal h2, 
+.titulo-adidas-principal h2, 
+.titulo-puma-principal h2, 
+.titulo-vans-principal h2,
+.titulo-sapato-social h2 {
+    font-size: 2rem;
+    font-weight: 440;
+    letter-spacing: -0.5px;
+    color: var(--cor-texto);
+}
+.tenis-da-nike p, 
+.tenis-da-adidas p, 
+.tenis-da-puma p, 
+.tenis-da-vans p, 
+#social p {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-texto);
+    margin-bottom: 4px;
+}
+.tenis-da-nike span, 
+.tenis-da-adidas span, 
+.tenis-da-puma span, 
+.tenis-da-vans span, 
+#social span {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    display: block;
+}
+@media (max-width: 820px){
+
+
+#imagem-container-full{
+    height: 70vh;
+}
+
+.header-content{
+    left: 5%;
+    bottom: 10%;
+    max-width: 90%;
+}
+
+header img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 20px;
+}
+
+.marca-destaque{
+    font-size: 2.5rem;
+}
+
+.btn-header-shop{
+    padding: 12px 25px;
+    font-size: 14px;
+}
+
+
+#sessao{
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+
+#sessao a{
+    font-size: 12px;
+}
+
+
+.filtros-itens{
+    flex-direction: column;
+}
+
+.filtros-itens img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.tenis-da-nike,
+.tenis-da-adidas,
+.tenis-da-puma,
+.tenis-da-vans,
+#social{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#sessao-tenis img,
+#sessao-social img{
+    width: 150px;
+    height: 150px;
+}
+
+
+#contato{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+}
+
+#contato p{
+  padding-left: 15px;  
+}
+
+#contato h3{
+  padding-left: 15px; 
+}
+
+#contato h2{ 
+ padding-left: 15px; 
+}
+
+#contato button{ 
+ display: block;
+ margin: 0 auto;
+}
+
+#imagem-contato img{
+    width: 100%;
+}
+
+
+#historia{
+    flex-direction: column;
+}
+
+.video-historia iframe{
+    width: 100%;
+    height: 250px;
+}
+
+.titulo-itens h2,
+.titulo-nike-principal h2,
+.titulo-adidas-principal h2,
+.titulo-puma-principal h2,
+.titulo-vans-principal h2,
+.titulo-sapato-social h2{
+    font-size: 1.5rem;
+}
+
+
+#final{
+    padding: 20px;
+}
+
+.imagens-finais img{
+    width: 28px;
+}
+
+
+.btn-comprar{
+    font-size: 14px;
+    padding: 12px;
+}
+
+#direita,
+#esquerda{
+    padding: 10px;
+    font-size: 18px;
+}
+
+}
